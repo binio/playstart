@@ -1,7 +1,11 @@
 package controllers;
 
+import models.Product;
 import play.mvc.Controller;
 import play.mvc.Result;
+import views.html.products.list;
+
+import java.util.List;
 
 /**
  * Created by tomasz.biniecki on 11/09/2017.
@@ -9,7 +13,8 @@ import play.mvc.Result;
 public class Products extends Controller {
 
     public Result list() {
-        return TODO;
+        List<Product> products = Product.findAll();
+        return ok(list.render(products));
     }
 
     public Result newProduct() {
