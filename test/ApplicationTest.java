@@ -18,11 +18,7 @@ import play.twirl.api.Content;
 
 import static play.test.Helpers.*;
 import static org.junit.Assert.*;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.BDDMockito.then;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.when;
+
 
 
 /**
@@ -35,6 +31,7 @@ public class ApplicationTest {
 
     @Test
     public void simpleCheck() {
+
         int a = 1 + 1;
         assertEquals(2, a);
     }
