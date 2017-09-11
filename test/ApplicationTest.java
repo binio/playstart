@@ -16,6 +16,8 @@ import play.libs.F;
 import play.libs.F.*;
 import play.twirl.api.Content;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 import static play.test.Helpers.*;
 import static org.junit.Assert.*;
 
@@ -28,6 +30,13 @@ import static org.junit.Assert.*;
  *
  */
 public class ApplicationTest {
+
+    @Test
+    public void mockListTest() {
+        List<String> values = mock(List.class);
+        when(values.size()).thenReturn(5);
+        assertEquals(5,values.size());
+    }
 
     @Test
     public void simpleCheck() {
