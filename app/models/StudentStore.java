@@ -38,4 +38,8 @@ public class StudentStore {
     public boolean deleteStudent(int id) {
         return students.remove(id) != null;
     }
+
+    public static StudentStore getInstance() {
+        return new StudentStore();
+    }
 }
