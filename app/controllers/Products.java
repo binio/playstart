@@ -3,7 +3,7 @@ package controllers;
 import models.Product;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.products.list;
+import views.html.Products.list;
 
 import java.util.List;
 
